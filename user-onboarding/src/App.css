@@ -1,14 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+
+#root,
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 .App {
-  text-align: center;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.main-content {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: wheat;
 }
 
 .App-logo {
   height: 40vmin;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,6 +33,11 @@
   color: white;
 }
 
-.App-link {
-  color: #09d3ac;
-}
+/* .user-form {
+  width: 460px;
+  margin: auto 100px;
+  padding: 32px;
+  font-weight: bold;
+  background-color: rgba(114, 121, 34, 0.9);
+  box-shadow: 2px 2px 10px 10px rgba(0, 0, 0, 0.1);
+} */
