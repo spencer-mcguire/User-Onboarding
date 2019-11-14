@@ -84,14 +84,16 @@ const SignUpForm = withFormik({
       .oneOf([true])
       .required()
   }),
-  handleSubmit(values, { setStatus }) {
+  handleSubmit(values, { setStatus, resetForm }) {
     axios
       .post("https://reqres.in/api/users", values)
       .then(res => {
         setStatus(res.data);
         console.log(res);
+        resetForm({});
       })
-      .catch(err => console.log(err.res));
+      .catch(err => console.log(err.res))
+      .finally();
   }
 })(UserForm);
 
