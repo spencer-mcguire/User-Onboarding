@@ -53,7 +53,7 @@ const UserForm = ({ values, errors, touched, status }) => {
       </div>
       {data.map(a => (
         <div className="user-data" key={a.id}>
-          <h2>User-Name: {a.username}</h2>
+          <h2>{a.username}</h2>
           <p>Email: {a.email}</p>
           <p>Password: {a.password}</p>
           <p>Terms of Service: accepted </p>
